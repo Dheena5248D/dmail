@@ -1,3 +1,49 @@
+html{
+  scroll-snap-type: y proximity;
+}
+section{
+  scroll-snap-align: start;
+}
+
+#animated-text {
+  font-size: 100px; /* Initial font size */
+  position: absolute;
+  animation: textAnimation 2s ease forwards; /* Animation duration and easing */
+}
+
+@keyframes textAnimation {
+  0% {
+      font-size: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  100% {
+      font-size: 25px; /* Adjust the final font size as needed */
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+  }
+}
+.bounce-text {
+  font-size: 24px;
+  animation: bounce 4s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  25% {
+      transform: translateY(-20px); /* Adjust bounce height */
+  }
+  50% {
+      transform: translateY(0);
+  }
+  75% {
+      transform: translateY(-10px); /* Adjust bounce height */
+  }
+}
 body{
 background-color:#3B0086;
 color: #f8f8f8 ;
