@@ -55,18 +55,39 @@ return(
       <textarea style={{borderRadius:"10px"}} id="mailInput" name="input" rows="6" cols="90"></textarea>
     </div>
     <div style={{display:"flex", justifyContent:"center", marginTop:"20px"}}>
-    <button id="gen_butt" className="button-52" type="button" style={{display:"flex", justifyContent:"center", marginTop:"20px"}}>generate</button> 
+    <button id="gen_butt" className="button-52" type="button" style={{display:"flex", justifyContent:"center", marginTop:"20px", marginBottom:"20px"}}>generate</button> 
     </div>
   </section>
 )
 }
 
+const Page3 =()=>{
+  return(
+    <section id="page3">
+        <div id="p3">
+          <div className="gen_mail">
+            <a className="em_txt">Email:</a><a id="mailId1"></a>
+            <div className="in_gen_mail"></div>
+          </div>
+          <div className="gen_mail">
+          <a className="em_txt">Email:</a><a id="mailId2"></a>
+          <div className="in_gen_mail"></div>
+          </div>
+          <div className="gen_mail">
+          <a  className="em_txt">Email:</a><a id="mailId3"></a>
+          <div className="in_gen_mail"></div>
+          </div>
+        </div>
+    </section>
 
+  )
+}
 const App = () =>{
   return(
     <div>
 <Page1 />
 <Page2 />
+<Page3 />
 </div>
 )
 }

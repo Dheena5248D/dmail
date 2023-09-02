@@ -65,3 +65,34 @@ text-decoration: dashed;
     padding: 13px 50px 13px;
   }
 }
+
+#p3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.gen_mail{
+ 
+  margin-top: 20px;
+  height:200px;
+  width: 550px;
+  background-color: #E57C04;
+  color: #fffdcf;
+  border-radius: 5px;
+}
+.in_gen_mail{
+  margin:10px 10px 10px 20px;
+  margin-bottom: 25px;
+  height:150px;
+  width: 500px;
+  background-color: #9046CF;
+  border-radius: 15px;
+}
+
+.em_txt{
+  margin-left: 10px;
+  margin-top: 90px;
+}
